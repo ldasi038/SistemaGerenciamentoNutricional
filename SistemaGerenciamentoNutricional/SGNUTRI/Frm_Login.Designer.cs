@@ -71,6 +71,7 @@ namespace SGNUTRI
             this.Progress_Login.Name = "Progress_Login";
             this.Progress_Login.Size = new System.Drawing.Size(309, 12);
             this.Progress_Login.TabIndex = 3;
+            this.Progress_Login.Click += new System.EventHandler(this.Progress_Login_Click);
             // 
             // Btn_Entrar
             // 
