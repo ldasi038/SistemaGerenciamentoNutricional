@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
-using MySql.Data;
-using MySql.Data.MySqlClient;
 
 namespace SGNUTRI
 {
@@ -25,7 +17,12 @@ namespace SGNUTRI
 
         private void Btn_Sair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Deseja realmente Sair?", "Mensagem Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) ;
+            {
+                Application.Exit();
+            }
+     
+                
         }
 
         private void Txt_Senha_TextChanged(object sender, EventArgs e)
@@ -49,8 +46,11 @@ namespace SGNUTRI
             {
                 if (Txt_Usuario.Text == reader.GetString("NOME"))
                 {
-                    if(Txt_Senha.Text == reader.GetString("CARGO"))
+                    
+
+                    if (Txt_Senha.Text == reader.GetString("CARGO"))
                     {
+                        Progress_Login.Value = 100;
                         MessageBox.Show("Login realizado com sucesso");
                         Frm_Menu menu = new Frm_Menu();
                         menu.Show();
