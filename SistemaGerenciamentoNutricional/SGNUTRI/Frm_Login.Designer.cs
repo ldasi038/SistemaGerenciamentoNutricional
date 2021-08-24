@@ -35,6 +35,7 @@ namespace SGNUTRI
             this.Btn_Entrar = new System.Windows.Forms.Button();
             this.Lbl_Senha = new System.Windows.Forms.Label();
             this.Lbl_Usuario = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Btn_Sair
@@ -93,12 +94,23 @@ namespace SGNUTRI
             this.Lbl_Usuario.TabIndex = 6;
             this.Lbl_Usuario.Text = "Usuario";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(266, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Teste";
+            
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(791, 470);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_Usuario);
             this.Controls.Add(this.Lbl_Senha);
             this.Controls.Add(this.Btn_Entrar);
@@ -110,7 +122,6 @@ namespace SGNUTRI
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "2";
-            this.Load += new System.EventHandler(this.Frm_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +135,7 @@ namespace SGNUTRI
         private System.Windows.Forms.Button Btn_Entrar;
         private System.Windows.Forms.Label Lbl_Senha;
         private System.Windows.Forms.Label Lbl_Usuario;
+        private System.Windows.Forms.Label label1;
     }
 }
 
