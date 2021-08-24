@@ -36,6 +36,8 @@ namespace SGNUTRI
             this.Lbl_Senha = new System.Windows.Forms.Label();
             this.Lbl_Usuario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn_Sair
@@ -102,7 +104,16 @@ namespace SGNUTRI
             this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Teste";
-            
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SGNUTRI.Properties.Resources.de67b41aeae70f1356b69335c56d4bf4;
+            this.pictureBox1.Location = new System.Drawing.Point(539, 115);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_Login
             // 
@@ -110,6 +121,7 @@ namespace SGNUTRI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(791, 470);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_Usuario);
             this.Controls.Add(this.Lbl_Senha);
@@ -122,6 +134,7 @@ namespace SGNUTRI
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "2";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +149,7 @@ namespace SGNUTRI
         private System.Windows.Forms.Label Lbl_Senha;
         private System.Windows.Forms.Label Lbl_Usuario;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
