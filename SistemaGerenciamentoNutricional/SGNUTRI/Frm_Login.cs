@@ -50,7 +50,6 @@ namespace SGNUTRI
 
                     if (Txt_Senha.Text == reader.GetString("CARGO"))
                     {
-                        Progress_Login.Value = 100;
                         MessageBox.Show("Login realizado com sucesso");
                         Frm_Menu menu = new Frm_Menu();
                         menu.Show();
@@ -65,9 +64,7 @@ namespace SGNUTRI
             conexaoBD.Close();
         }
 
-        private void Progress_Login_Click(object sender, EventArgs e)
-        {
 
-        }
+
     }
 }

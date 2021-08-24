@@ -32,7 +32,6 @@ namespace SGNUTRI
             this.Btn_Sair = new System.Windows.Forms.Button();
             this.Txt_Usuario = new System.Windows.Forms.TextBox();
             this.Txt_Senha = new System.Windows.Forms.TextBox();
-            this.Progress_Login = new System.Windows.Forms.ProgressBar();
             this.Btn_Entrar = new System.Windows.Forms.Button();
             this.Lbl_Senha = new System.Windows.Forms.Label();
             this.Lbl_Usuario = new System.Windows.Forms.Label();
@@ -63,15 +62,6 @@ namespace SGNUTRI
             this.Txt_Senha.Size = new System.Drawing.Size(197, 20);
             this.Txt_Senha.TabIndex = 2;
             this.Txt_Senha.TextChanged += new System.EventHandler(this.Txt_Senha_TextChanged);
-            // 
-            // Progress_Login
-            // 
-            this.Progress_Login.ForeColor = System.Drawing.Color.Lime;
-            this.Progress_Login.Location = new System.Drawing.Point(228, 270);
-            this.Progress_Login.Name = "Progress_Login";
-            this.Progress_Login.Size = new System.Drawing.Size(309, 12);
-            this.Progress_Login.TabIndex = 3;
-            this.Progress_Login.Click += new System.EventHandler(this.Progress_Login_Click);
             // 
             // Btn_Entrar
             // 
@@ -108,11 +98,10 @@ namespace SGNUTRI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(803, 487);
+            this.ClientSize = new System.Drawing.Size(791, 470);
             this.Controls.Add(this.Lbl_Usuario);
             this.Controls.Add(this.Lbl_Senha);
             this.Controls.Add(this.Btn_Entrar);
-            this.Controls.Add(this.Progress_Login);
             this.Controls.Add(this.Txt_Senha);
             this.Controls.Add(this.Txt_Usuario);
             this.Controls.Add(this.Btn_Sair);
@@ -120,7 +109,8 @@ namespace SGNUTRI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SGNUTRI - Sistema Gerenciamento Nutricional";
+            this.Text = "2";
+            this.Load += new System.EventHandler(this.Frm_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,7 +121,6 @@ namespace SGNUTRI
         private System.Windows.Forms.Button Btn_Sair;
         private System.Windows.Forms.TextBox Txt_Usuario;
         private System.Windows.Forms.TextBox Txt_Senha;
-        private System.Windows.Forms.ProgressBar Progress_Login;
         private System.Windows.Forms.Button Btn_Entrar;
         private System.Windows.Forms.Label Lbl_Senha;
         private System.Windows.Forms.Label Lbl_Usuario;
