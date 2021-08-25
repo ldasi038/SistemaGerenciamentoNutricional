@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace SGNUTRI {
@@ -22,7 +23,11 @@ namespace SGNUTRI {
         }
 
         private void Txt_Senha_TextChanged(object sender, EventArgs e) {
+            if (Txt_Senha.Text == "Senha") {
+                Txt_Senha.Text = "";
+                Txt_Senha.ForeColor = Color.Black;
 
+            }
         }
 
         private void Txt_Usuario_TextChanged(object sender, EventArgs e) {
@@ -97,6 +102,36 @@ namespace SGNUTRI {
                 Application.Exit();
             }
 
+        }
+
+        private void Txt_Usuario_Enter(object sender, EventArgs e) {
+            if (Txt_Usuario.Text == "Usuário") {
+                Txt_Usuario.Text = "";
+                Txt_Usuario.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void Txt_Usuario_Leave(object sender, EventArgs e) {
+            if (Txt_Usuario.Text == "") {
+                Txt_Usuario.Text = "Usuário";
+                Txt_Usuario.ForeColor = Color.Black;
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e) {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e) {
+
+        }
+
+        private void Txt_Senha_Leave(object sender, EventArgs e) {
+            if (Txt_Senha.Text == "") {
+                Txt_Senha.Text = "Senha";
+                Txt_Senha.ForeColor = Color.Black;
+            }
         }
     }
 }

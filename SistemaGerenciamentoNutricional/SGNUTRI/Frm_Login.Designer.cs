@@ -41,8 +41,6 @@ namespace SGNUTRI
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -63,29 +61,34 @@ namespace SGNUTRI
             // 
             // Txt_Usuario
             // 
-            this.Txt_Usuario.BackColor = System.Drawing.Color.Yellow;
+            this.Txt_Usuario.BackColor = System.Drawing.Color.ForestGreen;
             this.Txt_Usuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txt_Usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Txt_Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Usuario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Txt_Usuario.Location = new System.Drawing.Point(286, 120);
+            this.Txt_Usuario.Location = new System.Drawing.Point(286, 119);
             this.Txt_Usuario.Multiline = true;
             this.Txt_Usuario.Name = "Txt_Usuario";
-            this.Txt_Usuario.Size = new System.Drawing.Size(364, 23);
+            this.Txt_Usuario.Size = new System.Drawing.Size(364, 38);
             this.Txt_Usuario.TabIndex = 1;
             this.Txt_Usuario.Text = "Usuário";
             this.Txt_Usuario.TextChanged += new System.EventHandler(this.Txt_Usuario_TextChanged);
+            this.Txt_Usuario.Enter += new System.EventHandler(this.Txt_Usuario_Enter);
+            this.Txt_Usuario.Leave += new System.EventHandler(this.Txt_Usuario_Leave);
             // 
             // Txt_Senha
             // 
-            this.Txt_Senha.BackColor = System.Drawing.Color.Yellow;
+            this.Txt_Senha.BackColor = System.Drawing.Color.ForestGreen;
             this.Txt_Senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Txt_Senha.Location = new System.Drawing.Point(286, 186);
+            this.Txt_Senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.Txt_Senha.Location = new System.Drawing.Point(286, 187);
             this.Txt_Senha.Multiline = true;
             this.Txt_Senha.Name = "Txt_Senha";
-            this.Txt_Senha.Size = new System.Drawing.Size(364, 20);
+            this.Txt_Senha.Size = new System.Drawing.Size(364, 36);
             this.Txt_Senha.TabIndex = 2;
             this.Txt_Senha.Text = "Senha";
             this.Txt_Senha.TextChanged += new System.EventHandler(this.Txt_Senha_TextChanged);
+            this.Txt_Senha.Leave += new System.EventHandler(this.Txt_Senha_Leave);
             // 
             // Btn_Entrar
             // 
@@ -153,24 +156,6 @@ namespace SGNUTRI
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(283, 104);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Usuário";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(283, 170);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Senha";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SGNUTRI.Properties.Resources.X;
@@ -210,8 +195,6 @@ namespace SGNUTRI
             this.BackColor = System.Drawing.Color.ForestGreen;
             this.ClientSize = new System.Drawing.Size(680, 330);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -249,8 +232,6 @@ namespace SGNUTRI
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
