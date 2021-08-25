@@ -103,5 +103,17 @@
   <ItemGroup>
     <None Include="Resources\X.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Verde_e_Preto_Geométrico_Tecno_Tecnologia_Ícone_para_YouTube-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entrar cópia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

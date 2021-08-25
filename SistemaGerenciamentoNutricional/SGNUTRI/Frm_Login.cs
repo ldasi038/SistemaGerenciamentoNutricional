@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace SGNUTRI {
     public partial class Frm_Login : Form {
@@ -10,6 +11,14 @@ namespace SGNUTRI {
             Txt_Senha.PasswordChar = '*';
 
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
+
 
 
 
@@ -130,6 +139,35 @@ namespace SGNUTRI {
         private void Txt_Senha_Leave(object sender, EventArgs e) {
             if (Txt_Senha.Text == "") {
                 Txt_Senha.Text = "Senha";
+                Txt_Senha.ForeColor = Color.Black;
+            }
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e) {
+            if (MessageBox.Show("Deseja realmente Sair?", "Mensagem Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) ;
+            {
+                Application.Exit();
+            }
+        }
+
+        private void pictureBox2_Click_2(object sender, EventArgs e) {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Frm_Login_MouseDown(object sender, MouseEventArgs e) {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox4_MouseDown(object sender, MouseEventArgs e) {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+
+        }
+
+        private void Txt_Senha_Enter(object sender, EventArgs e) {
+            if (Txt_Senha.Text == "Senha") {
+                Txt_Senha.Text = "";
                 Txt_Senha.ForeColor = Color.Black;
             }
         }

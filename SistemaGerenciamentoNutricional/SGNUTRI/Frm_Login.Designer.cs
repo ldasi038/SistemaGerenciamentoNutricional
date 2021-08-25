@@ -42,9 +42,11 @@ namespace SGNUTRI
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +68,7 @@ namespace SGNUTRI
             this.Txt_Usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Usuario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Txt_Usuario.Location = new System.Drawing.Point(286, 119);
+            this.Txt_Usuario.Location = new System.Drawing.Point(282, 119);
             this.Txt_Usuario.Multiline = true;
             this.Txt_Usuario.Name = "Txt_Usuario";
             this.Txt_Usuario.Size = new System.Drawing.Size(364, 38);
@@ -81,25 +83,29 @@ namespace SGNUTRI
             this.Txt_Senha.BackColor = System.Drawing.Color.ForestGreen;
             this.Txt_Senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txt_Senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.Txt_Senha.Location = new System.Drawing.Point(286, 187);
+            this.Txt_Senha.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Txt_Senha.Location = new System.Drawing.Point(282, 186);
             this.Txt_Senha.Multiline = true;
             this.Txt_Senha.Name = "Txt_Senha";
             this.Txt_Senha.Size = new System.Drawing.Size(364, 36);
-            this.Txt_Senha.TabIndex = 2;
+            this.Txt_Senha.TabIndex = 1;
             this.Txt_Senha.Text = "Senha";
             this.Txt_Senha.TextChanged += new System.EventHandler(this.Txt_Senha_TextChanged);
+            this.Txt_Senha.Enter += new System.EventHandler(this.Txt_Senha_Enter);
             this.Txt_Senha.Leave += new System.EventHandler(this.Txt_Senha_Leave);
             // 
             // Btn_Entrar
             // 
-            this.Btn_Entrar.BackColor = System.Drawing.Color.LawnGreen;
+            this.Btn_Entrar.BackColor = System.Drawing.Color.ForestGreen;
+            this.Btn_Entrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Entrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.Btn_Entrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.Btn_Entrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(118)))), ((int)(((byte)(126)))));
-            this.Btn_Entrar.ForeColor = System.Drawing.Color.ForestGreen;
-            this.Btn_Entrar.Location = new System.Drawing.Point(297, 252);
+            this.Btn_Entrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Entrar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_Entrar.Location = new System.Drawing.Point(295, 243);
             this.Btn_Entrar.Name = "Btn_Entrar";
-            this.Btn_Entrar.Size = new System.Drawing.Size(332, 40);
+            this.Btn_Entrar.Size = new System.Drawing.Size(329, 62);
             this.Btn_Entrar.TabIndex = 4;
             this.Btn_Entrar.Text = "Entrar";
             this.Btn_Entrar.UseVisualStyleBackColor = false;
@@ -109,11 +115,11 @@ namespace SGNUTRI
             // 
             this.Lbl_Usuario.AutoSize = true;
             this.Lbl_Usuario.BackColor = System.Drawing.Color.ForestGreen;
-            this.Lbl_Usuario.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Usuario.Font = new System.Drawing.Font("Century Gothic", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Usuario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbl_Usuario.Location = new System.Drawing.Point(392, 9);
+            this.Lbl_Usuario.Location = new System.Drawing.Point(371, 18);
             this.Lbl_Usuario.Name = "Lbl_Usuario";
-            this.Lbl_Usuario.Size = new System.Drawing.Size(151, 49);
+            this.Lbl_Usuario.Size = new System.Drawing.Size(175, 57);
             this.Lbl_Usuario.TabIndex = 6;
             this.Lbl_Usuario.Text = "LOGIN";
             this.Lbl_Usuario.Click += new System.EventHandler(this.Lbl_Usuario_Click);
@@ -127,7 +133,7 @@ namespace SGNUTRI
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(283, 139);
+            this.label1.Location = new System.Drawing.Point(279, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(367, 13);
             this.label1.TabIndex = 9;
@@ -137,7 +143,7 @@ namespace SGNUTRI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(283, 209);
+            this.label2.Location = new System.Drawing.Point(279, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(367, 13);
             this.label2.TabIndex = 10;
@@ -158,14 +164,25 @@ namespace SGNUTRI
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::SGNUTRI.Properties.Resources.X;
-            this.pictureBox2.Location = new System.Drawing.Point(649, 0);
+            this.pictureBox2.Image = global::SGNUTRI.Properties.Resources.minimazar;
+            this.pictureBox2.Location = new System.Drawing.Point(590, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.Size = new System.Drawing.Size(34, 29);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_2);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SGNUTRI.Properties.Resources.cerrar;
+            this.pictureBox3.Location = new System.Drawing.Point(627, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 29);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
             // 
             // pictureBox4
             // 
@@ -176,6 +193,7 @@ namespace SGNUTRI
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 13;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseDown);
             // 
             // pictureBox1
             // 
@@ -193,8 +211,9 @@ namespace SGNUTRI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(680, 330);
+            this.ClientSize = new System.Drawing.Size(658, 330);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -207,10 +226,13 @@ namespace SGNUTRI
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Login";
+            this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SGNUTRI - Sistema Gerenciamento Nutricional";
             this.Load += new System.EventHandler(this.Frm_Login_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Frm_Login_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -232,6 +254,7 @@ namespace SGNUTRI
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

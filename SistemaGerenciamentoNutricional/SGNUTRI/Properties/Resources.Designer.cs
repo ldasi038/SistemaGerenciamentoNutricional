@@ -63,6 +63,16 @@ namespace SGNUTRI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerrar {
+            get {
+                object obj = ResourceManager.GetObject("cerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap de67b41aeae70f1356b69335c56d4bf4 {
             get {
                 object obj = ResourceManager.GetObject("de67b41aeae70f1356b69335c56d4bf4", resourceCulture);
@@ -73,9 +83,40 @@ namespace SGNUTRI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Entrar_cópia {
+            get {
+                object obj = ResourceManager.GetObject("Entrar cópia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Food_Health_System {
             get {
                 object obj = ResourceManager.GetObject("Food Health System", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimazar {
+            get {
+                object obj = ResourceManager.GetObject("minimazar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Verde_e_Preto_Geométrico_Tecno_Tecnologia_Ícone_para_YouTube_removebg_preview__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Verde_e_Preto_Geométrico_Tecno_Tecnologia_Ícone_para_YouTube-removebg-preview (2)" +
+                        "", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
