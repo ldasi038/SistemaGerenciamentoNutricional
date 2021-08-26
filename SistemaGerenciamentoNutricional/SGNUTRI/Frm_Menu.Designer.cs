@@ -49,12 +49,13 @@ namespace SGNUTRI
             // 
             // Btn_Gerenciar_Cardapio
             // 
-            this.Btn_Gerenciar_Cardapio.Location = new System.Drawing.Point(285, 86);
+            this.Btn_Gerenciar_Cardapio.Location = new System.Drawing.Point(105, 82);
             this.Btn_Gerenciar_Cardapio.Name = "Btn_Gerenciar_Cardapio";
             this.Btn_Gerenciar_Cardapio.Size = new System.Drawing.Size(166, 40);
             this.Btn_Gerenciar_Cardapio.TabIndex = 1;
             this.Btn_Gerenciar_Cardapio.Text = "GERENCIAR CARDAPIO";
             this.Btn_Gerenciar_Cardapio.UseVisualStyleBackColor = true;
+            this.Btn_Gerenciar_Cardapio.Click += new System.EventHandler(this.Btn_Gerenciar_Cardapio_Click);
             // 
             // Btn_Gerenciar_Pedido
             // 

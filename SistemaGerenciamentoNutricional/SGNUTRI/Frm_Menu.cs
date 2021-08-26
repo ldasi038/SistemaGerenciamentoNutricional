@@ -22,5 +22,7 @@ namespace SGNUTRI
             Frm_Login login = new Frm_Login();
             login.Show();
         }
+
+        
     }
 }
