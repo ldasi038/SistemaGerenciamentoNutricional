@@ -74,7 +74,6 @@ namespace SGNUTRI
             this.Txt_Usuario.Size = new System.Drawing.Size(364, 38);
             this.Txt_Usuario.TabIndex = 1;
             this.Txt_Usuario.Text = "Usuário";
-            this.Txt_Usuario.TextChanged += new System.EventHandler(this.Txt_Usuario_TextChanged);
             this.Txt_Usuario.Enter += new System.EventHandler(this.Txt_Usuario_Enter);
             this.Txt_Usuario.Leave += new System.EventHandler(this.Txt_Usuario_Leave);
             // 
@@ -122,7 +121,6 @@ namespace SGNUTRI
             this.Lbl_Usuario.Size = new System.Drawing.Size(175, 57);
             this.Lbl_Usuario.TabIndex = 6;
             this.Lbl_Usuario.Text = "LOGIN";
-            this.Lbl_Usuario.Click += new System.EventHandler(this.Lbl_Usuario_Click);
             // 
             // notifyIcon1
             // 
@@ -204,7 +202,7 @@ namespace SGNUTRI
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            
             // 
             // Frm_Login
             // 
@@ -229,7 +227,7 @@ namespace SGNUTRI
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SGNUTRI - Sistema Gerenciamento Nutricional";
-            this.Load += new System.EventHandler(this.Frm_Login_Load);
+            
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Frm_Login_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

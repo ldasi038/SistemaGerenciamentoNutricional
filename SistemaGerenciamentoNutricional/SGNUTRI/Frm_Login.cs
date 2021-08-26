@@ -20,8 +20,6 @@ namespace SGNUTRI {
 
 
 
-
-
         private void Btn_Sair_Click(object sender, EventArgs e) {
             if (MessageBox.Show("Deseja realmente Sair?", "Mensagem Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) ;
             {
@@ -39,9 +37,7 @@ namespace SGNUTRI {
             }
         }
 
-        private void Txt_Usuario_TextChanged(object sender, EventArgs e) {
-
-        }
+        
 
         private void Btn_Entrar_Click(object sender, EventArgs e) {
             MySqlConnection conexaoBD = new MySqlConnection(Conect.strConect);
@@ -67,31 +63,19 @@ namespace SGNUTRI {
             conexaoBD.Close();
         }
 
-        private void Progress_Login_Click(object sender, EventArgs e) {
+        
 
-        }
+        
 
-        private void Frm_Login_Load(object sender, EventArgs e) {
+        
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e) {
-
-        }
-
-        private void Lbl_Usuario_Click(object sender, EventArgs e) {
-
-        }
+        
 
 
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+        
 
-        }
-
-        private void label1_Click(object sender, EventArgs e) {
-
-        }
+        
 
         
         private void pictureBox3_Click(object sender, EventArgs e) {
@@ -101,9 +85,7 @@ namespace SGNUTRI {
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e) {
-
-        }
+        
 
         private void pictureBox2_Click_1(object sender, EventArgs e) {
             if (MessageBox.Show("Deseja realmente Sair?", "Mensagem Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) ;
@@ -128,13 +110,9 @@ namespace SGNUTRI {
             }
         }
 
-        private void label3_Click(object sender, EventArgs e) {
+        
 
-        }
-
-        private void label4_Click(object sender, EventArgs e) {
-
-        }
+        
 
         private void Txt_Senha_Leave(object sender, EventArgs e) {
             if (Txt_Senha.Text == "") {
